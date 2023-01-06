@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 10px auto;
+    width: 600px;
+    background-color: #F2F2F2;
+}
+h1{
+    text-align: center;
+    padding-top: 12px;
+}
+form{
+    padding: 12px 16px;
+}
+.form-row {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 100%;
+}
+.form-row > label{
+    display: inline-block;
+    padding: 4px 0px;
+}
+.form-control{
+    width: 100%;
+    padding: 12px 0px;
+    border: none;
+    border-bottom: 2px solid tomato;
+    font-size: 18px;
+}
+.form-control:focus{
+    background-color: powderblue;
+    outline: none;
+}
+.btn{
+    padding: 14px 22px;
+    font-weight: bold;
+    background-color: tomato;
+    border: none;
+    color: white;
+    cursor: pointer;
+    /* float: right; */
+}
+.btn:hover{
+    background-color: forestgreen;
+}
