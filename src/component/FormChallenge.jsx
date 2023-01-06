@@ -61,7 +61,7 @@ const FormChallenge = () => {
                     <label htmlFor='edition'>Your edition</label>
                     <select className='form-control' name='edition' 
                             onChange={onInputChange}
-                            id='updates' value={formData.updates}>
+                            id='edition' value={formData.edition}>
                         <option value=''>Select Option</option>
                         <option value='North Edition'>North Edition</option>
                         <option value='Time Of India'>Time Of India</option>
