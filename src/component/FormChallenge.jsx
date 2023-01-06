@@ -45,27 +45,28 @@ const FormChallenge = () => {
         <div className='container'>
             <h1>NewLetter SignUp Form</h1>
             <form>
-                <div className='form-group'>
+                <div className='form-row'>
                     <label htmlFor='name'>Your full name</label>
                     <input type='text' className='form-control' name='name'
                         placeholder='Fullname' onChange={onInputChange}
                         value={formData.name} />
                 </div>
-                <div className='form-group'>
+                <div className='form-row'>
                     <label htmlFor='password'>YourPassword</label>
                     <input type='password' className='form-control' name='password'
                         placeholder='Password' onChange={onInputChange}
                         value={formData.password} />
                 </div>
-                <div className='form-group'>
+                <div className='form-row'>
                     <label htmlFor='edition'>Your edition</label>
                     <select className='form-control' name='edition' 
                             onChange={onInputChange}
                             id='updates' value={formData.updates}>
+                        <option value=''>Select Option</option>
                         <option value='North Edition'>North Edition</option>
-                        <option value='East Edition'>East Edition</option>
-                        <option value='West Edition'>West Edition</option>
-                        <option value='South Edition'>South Edition</option>
+                        <option value='Time Of India'>Time Of India</option>
+                        <option value='The Hindu'>The Hindu</option>
+                        <option value='Mumbai Mirror'>Mumbai Mirror</option>
                     </select>
                 </div>
                 <button type='button' className='btn' 
