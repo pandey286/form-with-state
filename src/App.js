@@ -5,8 +5,9 @@ import FormChallenge from './component/FormChallenge';
 function App() {
   return (
     <>
+      {/* <Login /> */}
       {/* <Register /> */}
-      <FormChallenge/>
+      <FormChallenge />
     </>
   );
 }
