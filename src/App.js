@@ -1,13 +1,13 @@
 import Login from './component/Login';
-import Register from './component/Register';
-import FormChallenge from './component/FormChallenge';
+// import Register from './component/Register';
+// import FormChallenge from './component/FormChallenge';
 
 function App() {
   return (
     <>
-      {/* <Login /> */}
+      <Login />
       {/* <Register /> */}
-      <FormChallenge />
+      {/* <FormChallenge /> */}
     </>
   );
 }

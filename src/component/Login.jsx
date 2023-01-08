@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+
 const Login = () => {
 
     // const [email, setEmail] = useState('welcome.email')
@@ -8,10 +9,13 @@ const Login = () => {
 
     const [formData, setFormData] = useState({
         email: '',
-        password: ''
+        password: '',
+        validation: true
     })
 
     function onLoginButtonClick() {
+        ((formData.email === 'welcome') && (formData.password === 'hello')  ) ? setFormData({...formData , validation : true}) : setFormData({...formData , validation : false})
+        
         console.log(formData)
 
         /**
@@ -47,7 +51,11 @@ const Login = () => {
                     <label htmlFor='password'>Password</label>
                     <input type='password' className='form-control' name='password' placeholder='Password' onChange={onInputChange} />
                 </div>
-                <button type='button' className='btn-primary' onClick={onLoginButtonClick}>Login</button>
+                <button type='button' className='btn-primary' onClick={onLoginButtonClick}>
+                    Login</button>{
+ 
+                        formData.validation ? <p> Login Successful</p> : <p> Login Failed </p>  
+                    }
             </form>
         </div>
     )
